@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.nav .nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nav .nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.nav .nav-part2 h5 {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.nav .nav-part2 span {
+    opacity: 0.5;
+}
+
+.nav-2 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 30px;
+}
+
+.nav-2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+.content{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 200px;
+    overflow-x: scroll;
+    padding: 50px;
+}
+
+.content::-webkit-scrollbar {
+    height: 7px;
+    background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgb(255, 102, 0);
+}
+
+.content .top {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.content h1 {
+    margin-left: 75px;
+    font-size: 7vw;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.content h4 {
+    opacity: 0.6;
+}
+
+.btm-img{
+    height: 50%;
+    width: 100%; 
+    display: flex; 
+    overflow-x: auto;
+}
+
+.btm-img::-webkit-scrollbar {
+    display: none;
+}
+
+.btm-img img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
